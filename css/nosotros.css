@@ -1,18 +1,93 @@
+*{
+    font-family: 'Inter bold', sans-serif;
+}
+
+
+body{
+    margin: 0;
+}
+
+header{
+    padding-left: 2vh;
+    padding-right: 2vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(10vh, auto);
+    background-color: #fff;
+}
+
+header .menu{
+    margin-left: auto;
+    font-size: 1.34rem;
+    font-weight: 600;
+    padding: 3.5vh;
+}
+
+header .logo{
+    padding: 2vh;
+}
+
+header .logo a{
+    font-weight: 600;
+    font-size: 4vh;
+    color: rgb(22, 20, 20);
+}
+
+header .logo b{
+    font-weight: 600;
+    color: rgb(160, 59, 255);
+}
+
+header .menu a{
+    text-decoration: none;
+    color: rgb(144, 53, 230);
+}
+
+header .menu a:hover{
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+/*Fin del Header*/
+
 .texto{
-    width: 70%;
+    width: 60%;
     padding: 4.5vh;
+    margin: auto;
 }
 
 .texto h1{
     padding-top: 1vh;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 5vh;
+    text-align: center;
 }
 
 .texto h2{
-    width: 60%;
+    width: 100%;
     opacity: 0.9;
-    text-align: justify;
+    text-align: center;
+    margin: auto;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 3vh;
+}
+
+/*Footer - pie de pagina*/
+
+.container-footer{
+    width: 100%;
+    padding: 20px 0;
+    background: #fff;
+}
+
+.container-footer footer{
+    max-width: 100%;
+    margin: auto;
+}
+
+.container-footer h4{
+    text-align: center;
+    font-size: medium;
+    color: #8e8e8e;
+    font-weight: 500;
 }
