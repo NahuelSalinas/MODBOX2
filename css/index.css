@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&display=swap');
+*{
+    font-family: 'Inter bold', sans-serif;
+}
 
 body{
-    display: flexbox;
     background-color: #f1f1f1;
-    font-family: 'Source Sans Pro', sans-serif;
 }
 
 header{
@@ -19,7 +18,6 @@ header{
 header .menu{
     margin-left: auto;
     font-size: 1.34rem;
-    font-family: 'Source Sans Pro', sans-serif;
     font-weight: 600;
     padding: 3.5vh;
 }
@@ -29,14 +27,12 @@ header .logo{
 }
 
 header .logo a{
-    font-family: 'Source Sans Pro', sans-serif;
     font-weight: 600;
     font-size: 4vh;
     color: rgb(22, 20, 20);
 }
 
 header .logo b{
-    font-family: 'Source Sans Pro', sans-serif;
     font-weight: 600;
     color: rgb(160, 59, 255);
 }
@@ -87,17 +83,15 @@ header .menu a:hover{
 
 .container-info-cover h1{
     font-size: 60px;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 500;
+    font-weight: 700;
     color: #fff;
     margin-bottom: 20px;
 }
 
 .container-info-cover p{
-    font-family: 'Source Sans Pro', sans-serif;
     color: #fff;
     font-size: 20px;
-    font-weight: 300;
+    font-weight: 500;
 }
 
 /*Seccion del cover finalizada*/
@@ -105,7 +99,6 @@ header .menu a:hover{
 .textos{
     width: 60%;
     margin: auto;
-    font-family: 'Source Sans Pro', sans-serif;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin-top: 4vh;
@@ -117,15 +110,15 @@ header .menu a:hover{
     grid-row: 1;
 }
 
+.textos .titulo1 h1{
+    font-size: 180%;
+    font-weight: 550;
+}
+
 .textos .titulo1 p{
     width: 90%;
 }
 
-.textos .titulo1 h1{
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 550;
-    font-size: 180%;
-}
 
 .textos .titulo2{
     width: 120%;
@@ -134,7 +127,6 @@ header .menu a:hover{
 }
 
 .textos .titulo2 h1{
-    font-family: 'Source Sans Pro', sans-serif;
     font-weight: 550;
     font-size: 180%;
 }
@@ -145,7 +137,6 @@ header .menu a:hover{
 
 .proyectos-text{
     display: grid;
-    font-family: 'Source Sans Pro', sans-serif;
     margin: auto;
 }
 
@@ -159,10 +150,12 @@ header .menu a:hover{
 /*Tarjetas*/
 
 .tarjetas{
+    align-content: center;
     width: 70%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     margin: auto;
+    justify-items: center;
 }
 
 .tarjetas .tarjeta{
@@ -174,12 +167,10 @@ header .menu a:hover{
     border-radius: 1vh;
 }
 
-
 .tarjetas .tarjeta img{
     width: 100%;
     height: 40%;
 }
-
 
 .cuerpo h3{
     font-size: 100%;
@@ -204,7 +195,6 @@ header .menu a:hover{
 .abajo a{
     text-decoration: none;
     font-size: 84%;
-    font-family: 'Source Sans Pro', sans-serif;
     color: #ffff;
     font-weight: 500;
 }
@@ -241,4 +231,270 @@ header .menu a:hover{
     font-size: medium;
     color: #8e8e8e;
     font-weight: 500;
+}
+
+
+@media screen and (max-width: 1160px){
+    /*Tarjetas*/
+    .tarjetas{
+        width: 60%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: auto;
+        justify-items: center;
+    }
+
+    .tarjetas .tarjeta{
+        width: 90%;
+        height: 90%;
+        padding: 6%;
+        margin-bottom: 3vh;
+        background-color: #ffff;
+        border-radius: 1vh;
+    }
+    
+}
+
+@media screen and (max-width: 1050px){
+    /*Tarjetas*/
+    .tarjetas{
+        width: 65%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: auto;
+        justify-items: center;
+    }
+
+    .tarjetas .tarjeta{
+        width: 90%;
+        height: 90%;
+        padding: 6%;
+        margin-bottom: 3vh;
+        background-color: #ffff;
+        border-radius: 1vh;
+    }
+    
+}
+
+@media screen and (max-width: 1010px){
+    /*Tarjetas*/
+    .tarjetas{
+        width: 70%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: auto;
+        justify-items: center;
+    }
+
+    .tarjetas .tarjeta{
+        width: 90%;
+        height: 90%;
+        padding: 6%;
+        margin-bottom: 3vh;
+        background-color: #ffff;
+        border-radius: 1vh;
+    }
+    
+}
+
+@media screen and (max-width: 900px){
+    /*Tarjetas*/
+    .tarjetas{
+        width: 70%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: auto;
+        justify-items: center;
+    }
+
+    .tarjetas .tarjeta{
+        width: 90%;
+        height: 90%;
+        padding: 6%;
+        margin-bottom: 3vh;
+        background-color: #ffff;
+        border-radius: 1vh;
+    }
+    
+}
+
+@media screen and (max-width: 872px){
+    /*Tarjetas*/
+    .tarjetas{
+        width: 65%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: auto;
+        justify-items: center;
+    }
+
+    .tarjetas .tarjeta{
+        width: 80%;
+        height: 90%;
+        padding: 6%;
+        margin-bottom: 3vh;
+        background-color: #ffff;
+        border-radius: 1vh;
+    }
+    
+}
+
+@media screen and (max-width: 720px){
+    /*Tarjetas*/
+    .tarjetas{
+        width: 75%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: auto;
+        justify-items: center;
+    }
+
+    .tarjetas .tarjeta{
+        width: 80%;
+        height: 90%;
+        padding: 6%;
+        margin-bottom: 3vh;
+        background-color: #ffff;
+        border-radius: 1vh;
+    }
+    
+}
+
+@media screen and (max-width: 720px){
+    /*Tarjetas*/
+    .tarjetas{
+        width: 85%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: auto;
+        justify-items: center;
+    }
+
+    .tarjetas .tarjeta{
+        width: 80%;
+        height: 90%;
+        padding: 6%;
+        margin-bottom: 3vh;
+        background-color: #ffff;
+        border-radius: 1vh;
+    }
+    
+}
+
+/*Mobile*/
+
+@media screen and (max-width: 580px){
+    /*Tarjetas*/
+    .tarjetas{
+        width: 55%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: auto;
+        justify-items: center;
+    }
+
+    .tarjetas .tarjeta{
+        width: 80%;
+        height: 90%;
+        padding: 6%;
+        margin-bottom: 3vh;
+        background-color: #ffff;
+        border-radius: 1vh;
+    }
+    
+    .textos{
+        width: 90;
+        text-align: center;
+        display: block;
+        margin: auto;
+        margin-top: 4vh;
+    }
+
+    .textos .titulo1{
+        width: 100%;
+        text-align: center;
+        display: inline-block;
+    }
+
+    .textos .titulo1 p{
+        margin: auto;
+    }
+
+    .textos .titulo2{
+        width: 100%;
+        text-align: center;
+        margin-top: 4vh;
+        display: inline-block;
+    }
+    
+    .textos .titulo2 p{
+        margin: auto;
+    }
+
+    .proyectos-text{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 500px){
+    /*Tarjetas*/
+    .tarjetas{
+        width: 60%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: auto;
+        justify-items: center;
+    }
+
+    .tarjetas .tarjeta{
+        width: 80%;
+        height: 90%;
+        padding: 6%;
+        margin-bottom: 3vh;
+        background-color: #ffff;
+        border-radius: 1vh;
+    }
+    
+}
+
+@media screen and (max-width: 450px){
+    /*Tarjetas*/
+    .tarjetas{
+        width: 70%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: auto;
+        justify-items: center;
+    }
+
+    .tarjetas .tarjeta{
+        width: 80%;
+        height: 90%;
+        padding: 6%;
+        margin-bottom: 3vh;
+        background-color: #ffff;
+        border-radius: 1vh;
+    }
+    
+}
+
+@media screen and (max-width: 400px){
+    /*Tarjetas*/
+    .tarjetas{
+        width: 76%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: auto;
+        justify-items: center;
+    }
+
+    .tarjetas .tarjeta{
+        width: 80%;
+        height: 90%;
+        padding: 6%;
+        margin-bottom: 3vh;
+        background-color: #ffff;
+        border-radius: 1vh;
+    }
+    
 }
