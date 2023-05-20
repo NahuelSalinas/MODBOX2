@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
 *{
-    font-family: 'Inter bold', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 body{
-    background-color: #f1f1f1;
+    /*background-color: #f1f1f1;*/
+    background-color: #1a1e29;
 }
 
 header{
@@ -12,14 +15,27 @@ header{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: minmax(10vh, auto);
-    background-color: #fff;
+    /*background-color: #fff;*/
+    background-color: #132d46;
 }
 
 header .menu{
-    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    width: 100%;
     font-size: 1.34rem;
     font-weight: 600;
     padding: 3.5vh;
+}
+
+#carrito img{
+    width: 1.15em;
+    padding-left: 0.2em;
+}
+
+#carrito img:hover{
+    opacity: 0.7;
+    transition: 0.4s;
 }
 
 header .logo{
@@ -29,16 +45,19 @@ header .logo{
 header .logo a{
     font-weight: 600;
     font-size: 4vh;
-    color: rgb(22, 20, 20);
+    color: #ffffffe0;
 }
 
 header .logo b{
     font-weight: 600;
-    color: rgb(160, 59, 255);
+    color: rgba(160, 59, 255, 0.918);
 }
 
 header .menu a{
     text-decoration: none;
+    margin: 4px;
+    /*color: rgb(160, 59, 255);*/
+    color: #ffffffe0;
 }
 
 header .menu a:hover{
@@ -113,10 +132,12 @@ header .menu a:hover{
 .textos .titulo1 h1{
     font-size: 180%;
     font-weight: 550;
+    color: #01c38e;
 }
 
 .textos .titulo1 p{
     width: 90%;
+    color: #01c38fe7;
 }
 
 
@@ -129,15 +150,18 @@ header .menu a:hover{
 .textos .titulo2 h1{
     font-weight: 550;
     font-size: 180%;
+    color: #01c38e;
 }
 
 .textos .titulo2 p{
     width: 90%;
+    color: #01c38fe7;
 }
 
 .proyectos-text{
     display: grid;
     margin: auto;
+    color: #01c38e;
 }
 
 .proyectos-text p{
@@ -147,78 +171,97 @@ header .menu a:hover{
     padding-bottom: 2vh;
 }
 
-/*Tarjetas*/
+/*MB-1*/
+/*.MB-1{
+    width: 40em;
+    margin: auto;
+    height: 62em;
+    background-color: #ffffff;
+    background-color: #80b33e;
+    border-radius: 1em;
+    margin-bottom: 2em;
+}*/
 
-.tarjetas{
-    align-content: center;
-    width: 70%;
+.img-text{
+    height: 70em;
+}
+
+.innovador{
+    width: 80%;
+    margin: auto;
+    height: 16em;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2,1fr);
+}
+
+.innovador img{
+    height: 20em;
+    align-self: center;
+}
+
+.innovador h2{
+    color: #01c38e;
+    padding-top: 3em;
+}
+
+.innovador p{
+    color: #01c38ff5;
+    text-align: justify;
+}
+
+.asequible{
+    width: 80%;
     margin: auto;
-    justify-items: center;
-}
-
-.tarjetas .tarjeta{
-    width: 90%;
-    height: 90%;
-    padding: 6%;
-    margin-bottom: 3vh;
-    background-color: #ffff;
-    border-radius: 1vh;
-}
-
-.tarjetas .tarjeta img{
-    width: 100%;
-    height: 40%;
-}
-
-.cuerpo h3{
-    font-size: 100%;
-    padding-top: 12%;
-    color: rgb(54, 54, 54);
-    font-weight: 600;
-}
-
-.cuerpo p{
-    width: 90%;
-    max-height: 11vh;
-    padding-bottom: 10%;
-    font-size: 78%;
-    margin: auto;
-}
-
-.abajo button{
+    height: 16em;
     display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 6em;
+}
+
+.asequible img{
+    padding-left: 4em;
+    height: 20em;
+}
+
+.asequible h2{
+    padding-top: 3em;
+    color: #01c38e;
+}
+
+.asequible p{
+    color: #01c38ff5;
+    text-align: justify;
+}
+
+.calidad-precio{
+    padding-top: 6em;
+    width: 80%;
     margin: auto;
+    height: 16em;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
 }
 
-.abajo a{
-    text-decoration: none;
-    font-size: 84%;
-    color: #ffff;
-    font-weight: 500;
+.calidad-precio img{
+    height: 20em;
+    align-self: center;
 }
 
-.tarjeta button{
-    background-color: cornflowerblue;
-    padding: 2%;
-    border-radius: 0.5vh;
-    border: none;
-    padding-left: 20%;
-    padding-right: 20%;
+.calidad-precio h2{
+    color: #01c38e;
+    padding-top: 3em;
 }
 
-.tarjeta button:hover{
-    opacity: 0.8;
-    transition: 0.3s;
+.calidad-precio p{
+    color: #01c38ff5;
+    text-align: justify;
 }
 
 /*Footer - pie de pagina*/
-
 .container-footer{
     width: 100%;
     padding: 20px 0;
-    background: #fff;
+    /*background: #fff;*/
 }
 
 .container-footer footer{
@@ -233,6 +276,7 @@ header .menu a:hover{
     font-weight: 500;
 }
 
+/*BURGER*/
 
 @media screen and (max-width: 1160px){
     /*Tarjetas*/
@@ -338,6 +382,75 @@ header .menu a:hover{
     }
     
 }
+
+/*@media screen and (max-width: 800px){
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .container-all{
+        transition: all 300ms cubic-bezier(1,0,0,1);
+    }
+
+    .move-container-all{
+        transform: translateX(300px);
+    }
+
+    .menu{
+        width: 0px;
+        height: 100vh;
+        position: fixed;
+        top: 80px;
+        left: 0;
+        background: #fff;
+        overflow: hidden;
+        transform: translateX(-350px);
+        box-shadow: 10px 0 20px -25px black;
+        transition: all 300ms cubic-bezier(1,0,0,1);
+    }
+
+    .show-lateral {
+        width: 300px;
+        transform: translateX(0px);
+    }
+
+    .menu nav ul {
+        flex-direction: column;
+    }
+
+    .menu nav ul li{
+        max-width: 200px;
+        height: 50px;
+        justify-content: flex-start;
+    }
+
+    .menu-selected:before{
+        width: 0;
+    }
+
+    .menu nav ul li a{
+        margin-top: 40px;
+        color: #858585;
+    }
+
+    .menu nav ul li a i{
+        width: 20px;
+        display: inline-block;
+        margin-right: 10px;
+        color: #46a2fd;
+    }
+
+    #icon-menu{
+        display: flex;
+        right: 60px;
+    }
+
+    .container-aside{
+        flex-wrap: wrap;
+    }
+
+}*/
 
 @media screen and (max-width: 720px){
     /*Tarjetas*/
