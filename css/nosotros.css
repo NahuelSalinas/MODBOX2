@@ -1,11 +1,30 @@
-*{
-    font-family: 'Inter bold', sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 
+*{
+    font-family: 'Source Sans Pro', sans-serif;
+}
 
 body{
+    background-color: #1a1e29;
     margin: 0;
 }
+
+/*header{
+    padding-left: 2vh;
+    padding-right: 2vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(10vh, auto);
+    /*background-color: #fff;
+    background-color: #132d46;
+}
+
+header .menu{
+    margin-left: auto;
+    font-size: 1.34rem;
+    font-weight: 600;
+    padding: 3.5vh;
+}*/
 
 header{
     padding-left: 2vh;
@@ -13,11 +32,14 @@ header{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: minmax(10vh, auto);
-    background-color: #fff;
+    /*background-color: #fff;*/
+    background-color: #132d46;
 }
 
 header .menu{
-    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    width: 100%;
     font-size: 1.34rem;
     font-weight: 600;
     padding: 3.5vh;
@@ -27,20 +49,26 @@ header .logo{
     padding: 2vh;
 }
 
+header .logo{
+    padding: 2vh;
+}
+
 header .logo a{
     font-weight: 600;
     font-size: 4vh;
-    color: rgb(22, 20, 20);
+    color: #ffffffe0;
 }
 
 header .logo b{
     font-weight: 600;
-    color: rgb(160, 59, 255);
+    color: rgba(160, 59, 255, 0.918);
 }
 
 header .menu a{
     text-decoration: none;
-    color: rgb(144, 53, 230);
+    margin: 4px;
+    /*color: rgb(160, 59, 255);*/
+    color: #ffffffe0;
 }
 
 header .menu a:hover{
@@ -58,9 +86,9 @@ header .menu a:hover{
 
 .texto h1{
     padding-top: 1vh;
-    font-family: 'Source Sans Pro', sans-serif;
     font-size: 5vh;
     text-align: center;
+    color: #01c38e;
 }
 
 .texto h2{
@@ -68,8 +96,8 @@ header .menu a:hover{
     opacity: 0.9;
     text-align: center;
     margin: auto;
-    font-family: 'Source Sans Pro', sans-serif;
     font-size: 3vh;
+    color: #01c38ff3;
 }
 
 /*Footer - pie de pagina*/
@@ -77,11 +105,11 @@ header .menu a:hover{
 .container-footer{
     width: 100%;
     padding: 20px 0;
-    background: #fff;
+    background-color: #1a1e29;
 }
 
 .container-footer footer{
-    max-width: 100%;
+    width: auto;
     margin: auto;
 }
 
