@@ -4,59 +4,6 @@
     font-family: 'Source Sans Pro', sans-serif;
 }
 
-body{
-    /*background-color: #f1f1f1;*/
-    background-color: #1a1e29;
-}
-
-header{
-    padding-left: 2vh;
-    padding-right: 2vh;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: minmax(10vh, auto);
-    /*background-color: #fff;*/
-    background-color: #132d46;
-}
-
-header .menu{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    font-size: 1.34rem;
-    font-weight: 600;
-    padding: 3.5vh;
-}
-
-header .logo{
-    padding: 2vh;
-}
-
-header .logo a{
-    font-weight: 600;
-    font-size: 4vh;
-    color: #ffffffe0;
-}
-
-header .logo b{
-    font-weight: 600;
-    color: rgba(160, 59, 255, 0.918);
-}
-
-header .menu a{
-    text-decoration: none;
-    margin: 4px;
-    /*color: rgb(160, 59, 255);*/
-    color: #ffffffe0;
-}
-
-header .menu a:hover{
-    opacity: 0.7;
-    transition: 0.3s;
-}
-
-/*Fin del Header*/
-
 .container-cover{
     width: 100%;
     position: relative;
@@ -122,12 +69,12 @@ header .menu a:hover{
 .textos .titulo1 h1{
     font-size: 180%;
     font-weight: 550;
-    color: #01c38e;
+    color: var(--colorFuente);
 }
 
 .textos .titulo1 p{
     width: 90%;
-    color: #01c38fe7;
+    color: var(--colorFuente);
 }
 
 
@@ -140,18 +87,18 @@ header .menu a:hover{
 .textos .titulo2 h1{
     font-weight: 550;
     font-size: 180%;
-    color: #01c38e;
+    color: var(--colorFuente);
 }
 
 .textos .titulo2 p{
     width: 90%;
-    color: #01c38fe7;
+    color: var(--colorFuente);
 }
 
 .proyectos-text{
     display: grid;
     margin: auto;
-    color: #01c38e;
+    color: var(--colorFuente);
 }
 
 .proyectos-text p{
@@ -180,12 +127,12 @@ header .menu a:hover{
 }
 
 .innovador h2{
-    color: #01c38e;
+    color: var(--colorFuente);
     padding-top: 3em;
 }
 
 .innovador p{
-    color: #01c38ff5;
+    color: var(--colorFuente);
     text-align: justify;
 }
 
@@ -205,11 +152,11 @@ header .menu a:hover{
 
 .asequible h2{
     padding-top: 3em;
-    color: #01c38e;
+    color: var(--colorFuente);
 }
 
 .asequible p{
-    color: #01c38ff5;
+    color: var(--colorFuente);
     text-align: justify;
 }
 
@@ -228,12 +175,12 @@ header .menu a:hover{
 }
 
 .calidad-precio h2{
-    color: #01c38e;
+    color: var(--colorFuente);
     padding-top: 3em;
 }
 
 .calidad-precio p{
-    color: #01c38ff5;
+    color: var(--colorFuente);
     text-align: justify;
 }
 
